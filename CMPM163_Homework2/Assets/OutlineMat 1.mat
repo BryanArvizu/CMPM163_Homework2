@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: OutlineMat 1
-  m_Shader: {fileID: 4800000, guid: 302368d2fb19ab740b83ef4db4303c3f, type: 3}
+  m_Shader: {fileID: 4800000, guid: 4c6e04e12a8e43147be90cbce7b42033, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -60,6 +60,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _Emissiveness: 1
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -67,6 +68,7 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _Shininess: 10
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -79,3 +81,5 @@ Material:
     - _Color2: {r: 1, g: 0, b: 0.18378544, a: 1}
     - _EdgeColor: {r: 0.9472873, g: 1, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmmisiveColor: {r: 1, g: 0, b: 0, a: 1}
+    - _SpecColor: {r: 1, g: 0, b: 0, a: 1}

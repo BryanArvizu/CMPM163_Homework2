@@ -2,7 +2,8 @@
 {
     Properties
     {
-		_Stroke("Stroke", Float) = 1.0
+		_Emissiveness("Emmissiveness", Range(0,10)) = 0
+		_Stroke("Threshold", Range(0,1)) = 0.5
 		_Color1 ("Main Color", Color) = (1,1,1,1)
         _Color2 ("Stroke Color", Color) = (0,0,0,1)
     }
@@ -36,8 +37,10 @@
 				float3 viewDir : TEXCOORD1;
             };
 
+			float4 _Color1;
 			float4 _Color2;
 			float _Stroke;
+			uniform float _Emissiveness;
 
             v2f vert (appdata v)
             {
@@ -55,9 +58,9 @@
 			{
 				float ndotv = dot(i.normal, i.viewDir);
 				if (abs(ndotv) < _Stroke)
-					return _Color2 * (ndotv/2+0.5);
+					return _Color2 * _Emissiveness;
 				else
-					return (0,0,0,0);
+					return _Color1;
             }
             ENDCG
         }
