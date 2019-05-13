@@ -15,5 +15,9 @@ public class StateManager : MonoBehaviour
             else if(index == 1)
                 SceneManager.LoadScene(0);
         }
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 }
